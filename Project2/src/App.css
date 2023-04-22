@@ -1,0 +1,25 @@
+.App {
+    display: flex;
+    flex-direction: column; /* flex directionu column yapmak y eksenini yeni x eksenimiz yapar dolayıyısıyla
+                            eskiden justfiy content: center yeterliyken artık align-items kullanılarak yapılır */
+    align-items: center; /* normalde justify content ama column ile align-items*/                       
+    
+}
+.courseList {
+    display: flex; /* yan yana dizer */
+    flex-wrap: wrap; /* yan yana gelen courseler widthi aştığı zaman aşağıya iner otomatik*/
+    justify-content: center;
+}
+.appButton {
+    width: 25%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    /*buradaborderileiçerikarasındakipixelibelirlerizyani"Kurs Ekle"iledışkısımarasıartar*/
+    font-size: 20px;
+    border-radius:10px;
+    border: 1px solid blue;
+}
+
+
+
