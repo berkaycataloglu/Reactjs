@@ -9,7 +9,6 @@ function getRandomCourse() {
 } //! --> return ederek de getRandomCourse çağılırdığı zaman random Angular Bootstrap Ccsharp Kompleweb değerlerinden biri olarak bilgiyi aktarır
 
 function App() {
-
   const [courses, setCourses] = useState([]) //! useState kullanımında iç kısım courses'in ilk değeri yani boş dizi olacaktır
 
   const handleClick = () => {
