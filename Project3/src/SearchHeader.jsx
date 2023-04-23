@@ -21,7 +21,7 @@ function SearchHeader({ search }) {
       <form onSubmit={handleFormSubmit}>
         <label>Ne Arıyorsunuz?</label>
         <input value={valueInput} onChange={handleChange} />
-        <div>{valueInput}</div>
+        {/* <div>{valueInput}</div> */}
       </form>
     </div>
   );

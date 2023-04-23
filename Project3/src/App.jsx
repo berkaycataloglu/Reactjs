@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import './SearchHeader.jsx'
-import SearchHeader from './SearchHeader.jsx'
-import searchImages  from './api';
+import SearchHeader from './SearchHeader'
+import searchImages  from './api.jsx';
+import ImageList from './components/ImageList'
+
+
 
 function App() {
 
-  const [count, setCount] = useState(0)
+  const [images, setImages] = useState([])
+  const handleSubmit = async (term) => {
+    const result = await searchImages(term)
+    setImages(result);
 
-  const handleSubmit = (term) => {
-    console.log(term)
-    searchImages(term)
   } //! SearchHeader'dan getirdiğimiz handleSubmit = valueInput değeri burada term'e eşit olacaktır
 
 
@@ -18,6 +20,9 @@ function App() {
 
     <div className='App'>
       <SearchHeader search={handleSubmit}/>
+      <ImageList
+      imagesPlaceholder = {images}
+      />
 
     </div>
   )

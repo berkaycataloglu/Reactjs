@@ -1,4 +1,3 @@
-
 .App {
   margin: 10px;
 }
@@ -17,3 +16,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.imageList {
+  columns: 250px 5;
+  column-gap: 10px;
+}
+/*  Burada columns ifadesi bu div içinde kaç tane sütun olucak ve bu sütunların genişliği ne kadar olucak bunu belirleriz (250px ve 5 olarak) */
+/*Column-gap ifadesi imageler arasındaki boşluğu oluşturmamızı sağlar  */
+
+.imageListImg {
+  width: 100%;
+  margin-bottom: 10px;
+} /* Kapsayıcı divimiz burada 250px lik genişlik olduğu için imagenin içine gelip width 100% verdiğimizde bu columna sığdığını görürüz yani normal image 250px den fazla olsa bile oraya sığdırır */
+/* Margin-bottom verdiğimiz değer üsttetki resimle alttaki arasındaki boşluğu oluşturmamızı sağladı  */
