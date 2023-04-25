@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const searchImages = async (term) => {
+const searchImages = async (term) => { 
   //! axios.get ifades unsplashte aradığımız sitesine istek atmamızı sağlar
   const response = await axios.get("https://api.unsplash.com/search/photos", {
     headers: {

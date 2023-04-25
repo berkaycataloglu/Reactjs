@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function SearchHeader({ search }) {
   //!display:flex Ne Arıyosunuz ve texti yan yana yapar fakat flex-directionu column yaparak alt alta gelmeleri sağlanır
-
+ 
   const [valueInput, setValueInput] = useState("");
   
   const handleFormSubmit = (event) => {
